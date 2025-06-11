@@ -6,9 +6,12 @@
 
 <script>
 import ProductList from "my-shop/src/components/ProductList.vue";
-export default{
-  
-}
+export default {
+  name: "App",
+  components: {
+    ProductList,
+  },
+};
 </script>
 
 <style>
