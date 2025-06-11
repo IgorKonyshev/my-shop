@@ -1,6 +1,6 @@
 <template>
   <div class="product-card">
-    <img src="image" :alt="name" class="product-image" />
+    <img :src="image" :alt="name" class="product-image" />
     <h2>{{ name }}</h2>
     <p>{{ description }}</p>
     <p class="price">{{ price }} грн</p>
