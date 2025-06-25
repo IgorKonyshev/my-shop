@@ -1,13 +1,9 @@
 <template>
-  <div class="admin-dashboard">
+  <div>
     <nav>
-      <ul>
-        <li><router-link to="/admin/products">Продукти</router-link></li>
-        <li><router-link to="/admin/reviews">Відгуки</router-link></li>
-        <li><router-link to="/admin/orders">Замовлення</router-link></li>
-      </ul>
+      <router-link to="/admin/products" active-class="active-link">Головна</router-link>
+      <router-link to="/admin/reviews" active-class="active-link">Відгуки</router-link>
     </nav>
-
     <main>
       <router-view />
     </main>
@@ -16,10 +12,9 @@
 
 <script>
 export default {
-  name: "AdminDashboard",
-};
-</script>
-
+  name: 'AdminDashboard'
+}
+</script> 
 <style scoped>
 nav ul {
   list-style: none;
