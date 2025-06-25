@@ -18,15 +18,7 @@ export default {
 };
 </script>
 
-<script>
-import ProductList from "@/components/ProductList.vue";
-export default {
-  name: "App",
-  components: {
-    ProductList,
-  },
-};
-</script>
+
 
 <style>
 #app {
