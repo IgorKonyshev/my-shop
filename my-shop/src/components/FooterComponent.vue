@@ -18,9 +18,17 @@
 </template>
 
 <script>
+
 export default {
   name: "FooterComponent",
+  data() {
+return {
+message: ""
+// Початкове значення
 };
+}
+};
+
 </script>
 
 <style scoped>

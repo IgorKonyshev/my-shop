@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import AdminDashboard from "./pages/AdminDashboard.vue";
 import ManageProducts from "./pages/ManageProducts.vue";
 import ManageReviews from "./pages/ManageReviews.vue";
+import ManagerContacts from "./pages/ManageContacts.vue";
 const routes = [
   {
     path: "/",
@@ -17,6 +18,7 @@ const routes = [
     children: [
       { path: "products", component: ManageProducts },
       { path: "reviews", component: ManageReviews },
+      {path: "contacts",component: ManagerContacts}
     ],
   },
 ];

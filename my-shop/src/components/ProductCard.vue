@@ -1,10 +1,10 @@
 <template>
-  <div class="product-card">
-    <img :src="image" :alt="name" class="product-image" />
-    <h2>{{ name }}</h2>
+  <div class="card">
+    <img :src="image" alt="Зображення товару" />
+    <h3>{{ name }}</h3>
     <p>{{ description }}</p>
-    <p class="price">{{ price }} грн</p>
-    <button class="buy-button">Купити</button>
+    <strong>{{ price }} грн</strong>
+     <button @click="addToCart">Додати до кошика</button>
   </div>
 </template>
 
@@ -20,37 +20,17 @@ export default {
 </script>
 
 <style scoped>
-.product-card {
-  max-width: 300px;
-  border: 1px solid #e0e0e0;
+.card {
+  width: 220px;
+  padding: 1rem;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+  background: white;
 }
-.product-image {
+.card img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.price {
-  font-size: 18px;
-  font-weight: bold;
-  color: #28a745;
-}
-
-.buy-button {
-  background: #007bff;
-  color: #fff;
-  font-weight: bold;
-  border: none;
-  border-radius: 6px;
-  padding: 10px 20px;
-  cursor: pointer;
-  margin-bottom: 20px;
-}
-
-.buy-button:hover {
-  background: #0056b3;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
 }
 </style>
